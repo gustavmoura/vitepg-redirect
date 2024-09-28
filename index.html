@@ -5,21 +5,84 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title></title>
+    <title>Bem-vindo ao Cassino</title>
 
     <style>
-        *{box-sizing:border-box;}body{max-width:1280px;margin:0 auto;padding:2rem;text-align:center;}body{display:flex;flex-direction:column;align-items:center;padding-top:3rem;}.logo{height:6em;padding:1.5em;will-change:filter;transition:filter 300ms;}.logo:hover{filter:drop-shadow(0 0 2em #646cffaa);}.logo.react:hover{filter:drop-shadow(0 0 2em #61dafbaa;}@keyframes logo-spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@media (prefers-reduced-motion:no-preference){a:nth-of-type(2) .logo{animation:logo-spin infinite 20s linear;}}.card{padding:2em;}.read-the-docs{color:#888;}:root{font-family:Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;line-height:1.5;font-weight:400;color-scheme:light dark;color:rgba(255,255,255,0.87);background-color:#242424;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}a{border-radius:8px;border:1px solid transparent;padding:0.6em 1.2em;font-size:1em;font-weight:500;font-family:inherit;background-color:#d2393d !important;cursor:pointer;transition:border-color 0.25s;}a:hover{border-color:#646cff;}a:focus,a:focus-visible{outline:4px auto -webkit-focus-ring-color;}body{margin:0;min-width:320px;min-height:100vh;}h1{font-size:3.2em;line-height:1.1;}button{border-radius:8px;border:1px solid transparent;padding:0.6em 1.2em;font-size:1em;font-weight:500;font-family:inherit;background-color:#d2393d;cursor:pointer;transition:border-color 0.25s;}button:hover{border-color:#646cff;}button:focus,button:focus-visible{outline:4px auto -webkit-focus-ring-color;}@media (prefers-color-scheme:light){:root{color:#213547;background-color:#ffffff;}a:hover{color:#747bff;}button{background-color:#f9f9f9;}}
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #3b0a45, #a859c1);
+            color: #fff;
+            text-align: center;
+        }
+
+        .logo {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #d2393d;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #c0282b;
+            transform: scale(1.05);
+        }
+
+        a:not(:last-child) {
+            margin-right: 15px;
+        }
     </style>
 </head>
 <body>
     <div>
-        <img src='react.svg' class="logo" alt="Vite logo" style="padding: 0;" />
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257">
+            <defs>
+                <linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%">
+                    <stop offset="0%" stop-color="#41D1FF"></stop>
+                    <stop offset="100%" stop-color="#BD34FE"></stop>
+                </linearGradient>
+                <linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%">
+                    <stop offset="0%" stop-color="#FFEA83"></stop>
+                    <stop offset="8.333%" stop-color="#FFDD35"></stop>
+                    <stop offset="100%" stop-color="#FFA800"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path>
+            <path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path>
+        </svg>
     </div>
     <h2>VitePG 2024</h2>
     <p>Você tem mais de 18 anos?</p>
     <div>
-        <a href='https://vitepg.com' style="background-color: #213547; color: #FFF; margin: 5px 10px;">SIM</a>
-        <a href='https://vitepg.com' style="background-color: #213547; color: #FFF; margin: 5px 10px;">NÃO</a>
+        <a href='https://vitepg.com'>SIM</a>
+        <a href='https://vitepg.com'>NÃO</a>
     </div>
 </body>
 </html>
